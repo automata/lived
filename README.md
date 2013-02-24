@@ -20,4 +20,5 @@ inspiration
 ===========
 
 * brett victor concepts on reactive programming.
-* UI from 
+* http://livecoding.io
+* http://www.zenpen.io/
