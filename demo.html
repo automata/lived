@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+ <head>
+  <title> lived ~ live editor </title>
+   <meta charset="utf-8">
+   <meta name="description" content="lived ~ simple
+         editor with reactive UI to your textarea">
+        
+   <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+   <link href="css/style.css" rel="stylesheet">
+   <link href="css/fonts.css" rel="stylesheet">
+   <link href="css/codemirror.css" rel="stylesheet">
+   <link href="libs/jquery/css/smoothness/jquery-ui-1.10.1.custom.css" rel="stylesheet">
+<link href="js/libs/spectrum.css" rel="stylesheet">
+
+   <!-- jquery -->
+   <script src="libs/jquery/js/jquery-1.9.1.js"></script>
+   <script src="libs/jquery/js/jquery-ui-1.10.1.custom.js"></script>
+
+   <!-- jquery color picker plugin: spectrum -->
+   <script src="libs/spectrum.js"></script>
+
+   <!-- codemirror -->
+   <script src="libs/codemirror/lib/codemirror.js"></script>
+   <script src="libs/codemirror/mode/javascript/javascript.js"></script>
+
+   <!-- lived -->
+   <script src="lived.js"></script>
+
+ </head>
+
+ <body>
+
+  <div class="text-options">
+   <div class="options">
+    <div id="slider"></div>
+   </div>
+  </div>
+
+  <div class="color-picker">
+   <input id="color-picke"></div>
+  </div>
+                
+
+  <section>
+   <header class="header">
+    liv<b>ed</b>
+   </header>
+
+   <textarea id="code" class="content">
+var x = 0;
+
+for (; x<10; x+=1) {
+  console.log(Math.sin(x * 50));
+}
+  </textarea>
+
+  </section>
+
+  <script type="text/javascript">
+   lived.init();
+  </script>
+  
+  </body>
+</html>
